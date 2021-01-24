@@ -8,9 +8,6 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 
 
-/**
- * Фабрика сессии hibernate для работы с БД
- */
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class HibernateSessionFactory {
