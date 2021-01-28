@@ -41,4 +41,14 @@ public class User {
                 '}';
     }
 
+    public void addAuto(Auto auto) {
+        auto.setUser(this);
+        autos.add(auto);
+    }
+
+    public void removeAuto(Auto auto) {
+        autos.remove(auto);
+    }
+
+
 }
