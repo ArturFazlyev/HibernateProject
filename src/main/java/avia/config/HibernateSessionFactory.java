@@ -1,8 +1,8 @@
-package config;
+package avia.config;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import models.Aircrafts;
+import avia.config.models.Aircrafts;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;

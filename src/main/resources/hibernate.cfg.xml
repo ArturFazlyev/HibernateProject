@@ -1,5 +1,5 @@
 <!DOCTYPE hibernate-configuration PUBLIC
-        "-//config/config Configuration DTD 3.0//EN"
+        "-//avia.config/avia.config Configuration DTD 3.0//EN"
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 
 <hibernate-configuration>
