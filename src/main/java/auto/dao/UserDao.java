@@ -16,7 +16,10 @@ import java.util.List;
 public class UserDao {
 
     public User findById(int id) {
-        return HibernateSessionFactoryUtil.getSessionFactory().openSession().get(User.class, id);
+        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        User user = session.get(User.class, id);
+        session.close();
+        return user;
 
     }
 
@@ -40,13 +43,16 @@ public class UserDao {
     public void delete (User user){
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         Transaction tx = session.beginTransaction();
-        session.save(user);
+        session.delete(user);
         tx.commit();
         session.close();
     }
 
     public Auto findAutoById(int id) {
-        return HibernateSessionFactoryUtil.getSessionFactory().openSession().get(Auto.class, id);
+        Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
+        Auto auto = session.get(Auto.class, id);
+        session.close();
+        return auto;
 
 
     }
