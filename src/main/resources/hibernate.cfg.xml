@@ -7,11 +7,11 @@
     <session-factory>
 
         <property name="connection.driver_class">org.postgresql.Driver</property> <!-- DB Driver -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/demo</property>
         <property name="connection.username">postgres</property> <!-- DB User -->
         <property name="connection.password">postgres</property> <!-- DB Password -->
         <property name="dialect">org.hibernate.dialect.PostgreSQL9Dialect</property> <!-- DB Dialect -->
-        <property name="show_sql">false</property> <!-- Show SQL in console -->
-        <property name="format_sql">false</property> <!-- Show SQL formatted -->
+        <property name="show_sql">true</property> <!-- Show SQL in console -->
     </session-factory>
 
 

@@ -1,7 +1,6 @@
 package auto.model;
 
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -9,22 +8,24 @@ import java.util.List;
 
 @Entity
 @Data
-@Table(name = "users")
-@NoArgsConstructor
+@Table(name = "demo.users")
 public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int user_id;
+    private int id;
 
     @Column(name = "name")
-    String name;
+    private String name;
 
     @Column(name = "age")
-    int age;
+    private int age;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
     List<Auto> autos;
+
+    public User() {
+    }
 
     public User(String name, int age) {
         this.name = name;
@@ -35,7 +36,7 @@ public class User {
     @Override
     public String toString() {
         return "models.User{" +
-                "id=" + user_id +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
                 '}';

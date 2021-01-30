@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Entity
 @Data
-@Table(name = "autos")
+@Table(name = "demo.autos")
 @NoArgsConstructor
 public class Auto {
     @Id
@@ -32,13 +32,6 @@ public class Auto {
     }
 
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
 
     @Override
     public String toString() {
