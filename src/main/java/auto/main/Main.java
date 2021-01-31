@@ -20,7 +20,5 @@ public class Main {
         user.addAuto(ford);
         userService.updateUser(user);
 
-        userService.deleteUser(user);
-
     }
 }

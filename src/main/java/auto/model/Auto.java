@@ -2,8 +2,10 @@ package auto.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
+import java.util.UUID;
 
 @Entity
 @Data
@@ -11,8 +13,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Auto {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
 
     @Column(name = "model")
     private String model;
