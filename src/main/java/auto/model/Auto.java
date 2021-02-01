@@ -2,7 +2,6 @@ package auto.model;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.UUID;
@@ -28,11 +27,10 @@ public class Auto {
     private User user;
 
 
-    public Auto (String model, String color) {
+    public Auto(String model, String color) {
         this.model = model;
         this.color = color;
     }
-
 
 
     @Override

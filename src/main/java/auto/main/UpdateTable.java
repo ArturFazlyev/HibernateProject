@@ -3,13 +3,14 @@ package auto.main;
 import auto.model.Auto;
 import auto.model.User;
 import auto.service.UserService;
+import org.junit.jupiter.api.Test;
 
-public class Main {
+public class UpdateTable {
 
-    public static void main(String[] args) {
-
+    @Test
+    public void testOne() {
         UserService userService = new UserService();
-        User user = new User("Bryan",25);
+        User user = new User("Bryan", 25);
         userService.saveUser(user);
         Auto ferrari = new Auto("Ferrari", "red");
         ferrari.setUser(user);
@@ -19,6 +20,7 @@ public class Main {
         ford.setUser(user);
         user.addAuto(ford);
         userService.updateUser(user);
-
     }
+
+
 }

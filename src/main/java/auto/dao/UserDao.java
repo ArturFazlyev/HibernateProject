@@ -3,7 +3,6 @@ package auto.dao;
 import auto.config.HibernateSessionFactoryUtil;
 import auto.model.Auto;
 import auto.model.User;
-import jdk.dynalink.linker.LinkerServices;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.Session;
