@@ -5,9 +5,6 @@ import auto.model.Country;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import java.util.Date;
-import java.util.UUID;
-
 public class CountryDao {
 
     public void createTable() {
@@ -15,7 +12,7 @@ public class CountryDao {
         Transaction tx = session.beginTransaction();
         Country country = new Country();
         country.setCountry_name("russia");
-        session.save(country);
+        session.saveOrUpdate(country);
         tx.commit();
         session.close();
     }
