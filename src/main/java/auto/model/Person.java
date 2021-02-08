@@ -20,6 +20,7 @@ public class Person {
     private String name;
 
     @OneToOne
+    @JoinColumn(name = "home")
     private HomeAddress homeAddress;
 
     public Person(String name, HomeAddress homeAddress){

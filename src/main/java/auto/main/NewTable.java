@@ -14,8 +14,8 @@ public class NewTable {
         HomeAddress homeAddress = new HomeAddress("Spb", "Nevsky");
         Person person = new Person("Max", homeAddress);
 
-        session.save(homeAddress);
-        session.save(person);
+        session.saveOrUpdate(homeAddress);
+        session.saveOrUpdate(person);
 
         tx.commit();
         session.disconnect();
