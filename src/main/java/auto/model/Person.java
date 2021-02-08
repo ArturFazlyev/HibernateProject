@@ -19,7 +19,7 @@ public class Person {
     @Column(name = "name")
     private String name;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "home")
     private HomeAddress homeAddress;
 
