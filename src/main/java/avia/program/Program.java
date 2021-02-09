@@ -1,6 +1,6 @@
-package avia.config.program;
+package avia.program;
 
-import avia.config.dao.AircraftsDao;
+import avia.dao.AircraftsDao;
 
 public class Program {
     private static final AircraftsDao aircraftsDao = new AircraftsDao();

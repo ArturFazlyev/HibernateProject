@@ -1,4 +1,4 @@
-package avia.config.models;
+package avia.models;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;

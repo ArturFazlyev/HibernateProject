@@ -1,8 +1,8 @@
-package avia.config.dao;
+package avia.dao;
 
-import avia.config.HibernateSessionFactory;
+import avia.HibernateSessionFactory;
+import avia.models.Aircrafts;
 import lombok.NoArgsConstructor;
-import avia.config.models.Aircrafts;
 
 import java.util.Optional;
 
